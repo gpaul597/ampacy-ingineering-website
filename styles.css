@@ -462,7 +462,7 @@ footer {
         height: 1000px; /* Adjust height as needed */
         position: absolute;
         width: 100%;
-        background-image: url('images/bg2.jpg');
+        background-image: url('bg2.jpg');
         background-size: cover;
         background-position: center;
         z-index: -1;
