@@ -450,7 +450,7 @@ footer {
     }
     .home-section {
         height: auto;
-        padding-top: 120px;
+        padding-top: 150px;
     }
 
     .home-card {
@@ -459,7 +459,7 @@ footer {
     }
 
     .background-image {
-        height: 900px; /* Adjust height as needed */
+        height: 1000px; /* Adjust height as needed */
         position: absolute;
         width: 100%;
         background-image: url('images/bg2.jpg');
