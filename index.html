@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampacy Engineering</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <button id="menuToggle">&#9776; </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Navigation -->
+    <nav id="sideNav">
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="background-image">
+            <!-- Add your background image here -->
+        </div>
+       
+            <div class="home-card">
+                <div class="content">
+                    <h1>AMPACY ENGINEERING</h1>
+                    <p>Discover our exceptional services</p>
+            </div>
+            <a href="#services"><button class="book-button">Book Now</button></a>
+        </div>
+    </section>
+
+    <div id="services" class="servicesheader">
+        <h1>Our Services</h1>
+    </div>
+    <section class="services-section">
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Geological Survey</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>EIA</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Borehole Services</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Pump Testing</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Water Heater System Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Power Backups Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>CCTVs Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Solars Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Pumps Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Control Panel Fabrications</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Elevated Water Towers</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>Pressed Steel Tanks Installation</h2>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-info">
+                <h2>General Electrical Works</h2>
+            </div>
+        </div>
+        <!-- Add more service cards as needed -->
+    </section>
+    <hr>
+
+    <section>
+        <footer>
+            <div id="contact" class="container-footer">
+                <div class="footer-info">
+                    <h3>Contact Information</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href="#home">Facebook</a></li>
+                        <li><a href="#services">Tiktok</a></li>
+                        <li><a href="#about">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+    </section>
+    
+
+    <script>
+  document.getElementById("menuToggle").addEventListener("click", function() {
+    var sideNav = document.getElementById("sideNav");
+    if (sideNav.style.left === "-250px") {
+        sideNav.style.left = "0";
+    } else {
+        sideNav.style.left = "-250px";
+    }
+});
+
+var header = document.querySelector(".fixed-header");
+
+// Get the initial scroll position
+var prevScrollpos = window.pageYOffset;
+
+// Function to handle scroll event
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        header.style.top = "0";
+    } else {
+        header.style.top = "-100px"; // Adjust as needed to hide the header when scrolling down
+    }
+    prevScrollpos = currentScrollPos;
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all elements with the class 'about-link'
+    const aboutLinks = document.querySelectorAll('.about-link');
+    const aboutPopup = document.getElementById('about-popup');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Add click event listener to each About Us link in the side navigation bar
+    aboutLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            aboutPopup.style.display = 'block';
+        });
+    });
+
+    // Add click event listener to the close button
+    closeBtn.addEventListener('click', function() {
+        aboutPopup.style.display = 'none';
+    });
+});
+
+
+
+    </script>
+</body>
+</html>
