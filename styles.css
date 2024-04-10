@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    width: 250px;
+    width: 300px;
     height: auto;
     display: block;
 }
@@ -89,7 +89,7 @@ header {
 }
 
 #sideNav ul li a {
-    font-size: 17px;
+    font-size: 25px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
