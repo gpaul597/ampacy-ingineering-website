@@ -56,8 +56,12 @@ header {
     text-decoration: underline;
 }
 
-.menu-toggle {
+.menu-toggle img {
     display: none;
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    height: 50px;
+    width: 50px;
+    color: #111f9b;
 }
 
 /* Side Navigation */
@@ -435,10 +439,11 @@ footer {
         display: none;
     }
 
-    .menu-toggle {
+    .menu-toggle img {
         display: block;
-        padding: 30px 40px; /* Increase padding for larger screens */
-        font-size: 18px;
+        padding: 10px 20px; /* Increase padding for larger screens */
+        height: 50px;
+        width: 50px;
     }
 
     #sideNav {
