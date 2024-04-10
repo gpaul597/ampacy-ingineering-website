@@ -169,9 +169,11 @@ header {
     align-items: center;
 }
 
-.servicesheader h1 {
+.servicesheader2 h1 {
     text-align: center;
-    color: #111f9b;
+    color: #111f9b
+    padding-bottom: 30px;
+
 }
 
 .services-section {
@@ -187,7 +189,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    background-image: url('images/contactbg.jpg');
     gap: 20px;
     padding: 20px;
     margin-bottom: 70px;
