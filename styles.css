@@ -187,6 +187,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    background-image: url('images/contactbg.jpg');
     gap: 20px;
     padding: 20px;
     margin-bottom: 70px;
