@@ -437,6 +437,8 @@ footer {
 
     .menu-toggle {
         display: block;
+        padding: 30px 40px; /* Increase padding for larger screens */
+        font-size: 18px;
     }
 
     #sideNav {
