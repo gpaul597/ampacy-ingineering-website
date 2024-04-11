@@ -369,7 +369,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('bg2.jpg');
+    background-image: url('contactbg.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -391,7 +391,7 @@ header {
 
 
 footer {
-    margin-top: 20px;
+    margin-top: 60px;
     background-color:#111f9b;
     color: #fff;
     padding: 20px 0;
