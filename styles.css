@@ -362,29 +362,65 @@ header {
     left: 0;
     width: 100%;
     height: 800px;
-}
-.background-image2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('contactbg.jpg');
+    background-image: url('images/contactbg.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
 
-
 .home-services h1 {
-    padding-top: 100px;
+    padding-top: 400px;
     text-align: center;
     color: white;
     font-size: 40px;
     font-weight: bolder;
-    padding-bottom: 200px;
-    margin-bottom: 50px;
    
+}
+
+.services-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-top: 800px;
+}
+
+
+.service-card2 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Adjust width as needed */
+    align-items: center;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.service-card2:hover {
+    transform: translateY(-10px); /* Move the card up slightly on hover */
+    box-shadow: 0 0 20px rgb(12, 46, 156);
+}
+
+.service-card2 img {
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #ddd;
+}
+
+.service-info {
+    padding: 20px;
+}
+
+.service-info h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.service-info p {
+    margin-bottom: 0;
 }
 
 
@@ -524,6 +560,16 @@ footer {
     }
 
     .service-card img {
+        align-items: center;
+        width: 100%;
+        height: 180px;
+        border-bottom: 1px solid #ddd;
+    }
+    .service-card2 {
+        width: calc(50% - 10px);
+    }
+
+    .service-card2 img {
         align-items: center;
         width: 100%;
         height: 180px;
