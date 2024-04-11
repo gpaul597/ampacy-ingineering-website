@@ -526,7 +526,7 @@ footer {
         z-index: -1;
     }
     .home-services {
-        height: 950px;
+        height: 1000px;
         margin-bottom: 650px;
     }
 
@@ -569,6 +569,9 @@ footer {
         height: 180px;
         border-bottom: 1px solid #ddd;
     }
+    .services-section2 {
+    margin-top: 1000px;
+}
     .service-card2 {
         width: calc(50% - 10px);
     }
